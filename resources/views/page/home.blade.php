@@ -6,6 +6,5 @@
 @include('partials.sectionHappy')
 @include('partials.sectionBook')
 @include('partials.sectionChefs')
-@include('partials.sectionChefs')
 @include('partials.sectionMap')
 @endsection

@@ -1,4 +1,4 @@
-<section class="dark-wrapper opaqued parallax" data-parallax="scroll" data-image-src="assets/img/bg/bg10.jpg" data-speed="0.8">
+<section class="dark-wrapper opaqued parallax" data-parallax="scroll" data-image-src="{{asset('img/bg/bg10.jpg" data-speed="')}}0.8">
     <div class="section-inner">
         <div class="container">
             <div class="row">
@@ -18,7 +18,7 @@
                                 <div class="col-xs-8 col-xs-offset-2 item-caption">
                                     <div class="row">
                                         <div class="col-sm-2">
-                                            <img src="assets/img/team/small1.jpg" class="img-responsive testimonial-author" alt="">
+                                            <img src="{{asset('img/team/small1.jpg')}}" class="img-responsive testimonial-author" alt="">
                                         </div>
                                         <div class="col-sm-10">                                                
                                             <h4>Charles Davies</h4>
@@ -40,7 +40,7 @@
                                 <div class="col-xs-8 col-xs-offset-2 item-caption">
                                     <div class="row">
                                         <div class="col-sm-2">
-                                            <img src="assets/img/team/small1.jpg" class="img-responsive testimonial-author" alt="">
+                                            <img src="{{asset('img/team/small1.jpg')}}" class="img-responsive testimonial-author" alt="">
                                         </div>
                                         <div class="col-sm-10">                                                
                                             <h4>Charles Davies</h4>

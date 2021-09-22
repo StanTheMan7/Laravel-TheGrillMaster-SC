@@ -29,3 +29,6 @@
         </div>
     </div>
 </footer>
+<div id="bottom-frame"></div>
+
+<a href="#" id="back-to-top"><i class="fa fa-long-arrow-up"></i></a>
