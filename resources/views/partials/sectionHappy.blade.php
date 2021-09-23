@@ -3,9 +3,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center mb100">
-                    <h2 class="section-heading">Our <span class="theme-accent-color">Happy</span> Customers</h2>
+                    <h2 class="section-heading">{{ ($titre[4]->titre) }}</h2>
                     <hr class="thin-hr">
-                    <h3 class="section-subheading secondary-font">Satisfaction, everytime.</h3>
+                    <h3 class="section-subheading secondary-font">{{ ($titre[5]->titre) }}</h3>
                 </div>
             </div>
         </div>
@@ -21,14 +21,14 @@
                                             <img src="{{asset('img/team/small1.jpg')}}" class="img-responsive testimonial-author" alt="">
                                         </div>
                                         <div class="col-sm-10">                                                
-                                            <h4>Charles Davies</h4>
-                                            <p>Compellingly customize highly efficient outsourcing with premium quality vectors. Conveniently target customer directed relationships after highly efficient process improvements.</p>
+                                            <h4>{{ ($happy[0]->titre) }}</h4>
+                                            <p>{{ ($happy[0]->description) }}</p>
                                             <ul class="list-inline">
-                                                <li><i class="fa fa-star theme-accent-color"></i></li>
-                                                <li><i class="fa fa-star theme-accent-color"></i></li>
-                                                <li><i class="fa fa-star theme-accent-color"></i></li>
-                                                <li><i class="fa fa-star theme-accent-color"></i></li>
-                                                <li><i class="fa fa-star theme-accent-color"></i></li>
+                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -43,14 +43,14 @@
                                             <img src="{{asset('img/team/small1.jpg')}}" class="img-responsive testimonial-author" alt="">
                                         </div>
                                         <div class="col-sm-10">                                                
-                                            <h4>Charles Davies</h4>
-                                            <p>Compellingly customize highly efficient outsourcing with premium quality vectors. Conveniently target customer directed relationships after highly efficient process improvements.</p>
+                                            <h4>{{ ($happy[0]->titre) }}</h4>
+                                            <p>{{ ($happy[0]->description) }}</p>
                                             <ul class="list-inline">
-                                                <li><i class="fa fa-star theme-accent-color"></i></li>
-                                                <li><i class="fa fa-star theme-accent-color"></i></li>
-                                                <li><i class="fa fa-star theme-accent-color"></i></li>
-                                                <li><i class="fa fa-star theme-accent-color"></i></li>
-                                                <li><i class="fa fa-star theme-accent-color"></i></li>
+                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
                                             </ul>
                                         </div>
                                     </div>

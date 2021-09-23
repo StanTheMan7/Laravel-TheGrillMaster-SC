@@ -3,9 +3,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center mb100">
-                    <h2 class="section-heading">Book <span class="theme-accent-color">Your</span> Table</h2>
+                    <h2 class="section-heading">{{ ($titre[6]->titre) }}</h2>
                     <hr class="thin-hr">
-                    <h3 class="section-subheading secondary-font">Satisfaction, everytime.</h3>
+                    <h3 class="section-subheading secondary-font">{{ ($titre[5]->titre) }}</h3>
                 </div>
             </div>
         </div>
@@ -14,10 +14,9 @@
                 <!-- Address, Phone & Email -->
                 <div class="col-md-5 col-md-offset-1 wow fadeIn">
                     <h3 class="mb30">Address</h3>
-                    <p class="lead">Florence Building</p>
-                    <p class="lead">Kings Square<br>
-                    London, LDN1 23 </p>
-                    <p class="lead">+448754 658 048<br>
+                    <p class="lead">{{ ($book_adresse[0]->building) }}</p>
+                    <p class="lead">{{ ($book_adresse[0]->adresse) }}</p>
+                    <p class="lead">{{ ($book_adresse[0]->telephone) }}<br>
                 </div>
 
                 <div class="col-md-5 col-sm-7 wow fadeIn">
@@ -25,24 +24,24 @@
                     <div class="row">
                       <div class="col-xs-5">
                         <ul class="list-unstyled weekdays">
-                          <li>Monday</li>
-                          <li>Tuesday</li>
-                          <li>Wednesday</li>
-                          <li>Thursday</li>
-                          <li>Friday</li>
-                          <li>Saturday</li>
-                          <li>Sunday</li>
+                          <li>{{ ($book_heure[0]->jour) }}</li>
+                          <li>{{ ($book_heure[1]->jour) }}</li>
+                          <li>{{ ($book_heure[2]->jour) }}</li>
+                          <li>{{ ($book_heure[3]->jour) }}</li>
+                          <li>{{ ($book_heure[4]->jour) }}</li>
+                          <li>{{ ($book_heure[5]->jour) }}</li>
+                          <li>{{ ($book_heure[6]->jour) }}</li>
                         </ul>
                       </div>
                       <div class="col-xs-7">
                         <ul class="list-unstyled">
-                          <li>11:00 AM - 11:00 PM</li>
-                          <li>11:00 AM - 11:00 PM</li>
-                          <li>11:00 AM - 11:00 PM</li>
-                          <li>11:00 AM - 11:00 PM</li>
-                          <li>11:00 AM - 1:00 AM</li>
-                          <li>11:00 AM - 1:00 AM</li>
-                          <li>11:00 AM - 1:00 AM</li>
+                          <li>{{ ($book_heure[0]->heure) }}</li>
+                          <li>{{ ($book_heure[1]->heure) }}</li>
+                          <li>{{ ($book_heure[2]->heure) }}</li>
+                          <li>{{ ($book_heure[3]->heure) }}</li>
+                          <li>{{ ($book_heure[4]->heure) }}</li>
+                          <li>{{ ($book_heure[5]->heure) }}</li>
+                          <li>{{ ($book_heure[6]->heure) }}</li>
                         </ul>
                       </div>
                     </div>

@@ -21,12 +21,12 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="main-navigation">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about" class="page-scroll">{{ }}</a></li>  
-                <li><a href="#about" class="page-scroll">Specials</a></li>    
-                <li><a href="#the-menu" class="page-scroll">Our Menu</a></li>      
-                <li><a href="#about" class="page-scroll">Book a Table</a></li>                 
+                <li><a href="#about" class="page-scroll">{{ $navbar[0]->contenu }}</a></li>  
+                <li><a href="#about" class="page-scroll">{{ $navbar[1]->contenu }}</a></li>    
+                <li><a href="#the-menu" class="page-scroll">{{ $navbar[2]->contenu }}</a></li>      
+                <li><a href="#about" class="page-scroll">{{ $navbar[3]->contenu }}</a></li>                 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">Extras <span class="pe-7s-angle-down"></span></a>
+                    <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">{{ $navbar[4]->contenu }} <span class="pe-7s-angle-down"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="404.html">404</a></li>
                     </ul>

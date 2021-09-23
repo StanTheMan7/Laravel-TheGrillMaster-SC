@@ -3,9 +3,9 @@
          <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center mb100">
-                    <h2 class="section-heading">Our <span class="theme-accent-color">Acclaimed</span> Chefs</h2>
+                    <h2 class="section-heading">{{ ($titre[2]->titre)}}</h2>
                     <hr class="thin-hr">
-                    <h3 class="section-subheading secondary-font">Dedicated to excellence.</h3>
+                    <h3 class="section-subheading secondary-font">{{ ($titre[3]->titre)}}</h3>
                 </div>
             </div>
         </div>
@@ -22,25 +22,25 @@
                                     <div class="col-xs-12 overlay-item-caption smoothie"></div>
                                     <div class="col-xs-12 hover-item-caption smoothie">
                                         <div class="vertical-center">
-                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">John Doe</a></h3>
+                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">{{ ($chef[0]->titre) }}</a></h3>
                                             <ul class="smoothie list-inline social-links wow fadeIn" data-wow-delay="0.2s">
                                                 <li>
-                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[0]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[1]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[2]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[3]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-behance"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[4]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[5]->icone) }}"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -56,25 +56,25 @@
                                     <div class="col-xs-12 overlay-item-caption smoothie"></div>
                                     <div class="col-xs-12 hover-item-caption smoothie">
                                         <div class="vertical-center">
-                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">Barry Scott</a></h3>
+                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">{{ ($chef[1]->titre) }}</a></h3>
                                             <ul class="smoothie list-inline social-links wow fadeIn" data-wow-delay="0.2s">
                                                 <li>
-                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[0]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[1]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[2]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[3]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-behance"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[4]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[5]->icone) }}"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -90,25 +90,25 @@
                                     <div class="col-xs-12 overlay-item-caption smoothie"></div>
                                     <div class="col-xs-12 hover-item-caption smoothie">
                                         <div class="vertical-center">
-                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">Tom Smooth</a></h3>
+                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">{{ ($chef[2]->titre) }}</a></h3>
                                             <ul class="smoothie list-inline social-links wow fadeIn" data-wow-delay="0.2s">
                                                 <li>
-                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[0]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[1]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[2]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[3]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-behance"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[4]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[5]->icone) }}"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -124,25 +124,25 @@
                                     <div class="col-xs-12 overlay-item-caption smoothie"></div>
                                     <div class="col-xs-12 hover-item-caption smoothie">
                                         <div class="vertical-center">
-                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">Harvey Wallace</a></h3>
+                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">{{ ($chef[3]->titre) }}</a></h3>
                                             <ul class="smoothie list-inline social-links wow fadeIn" data-wow-delay="0.2s">
                                                 <li>
-                                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[0]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[1]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[2]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[3]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-behance"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[4]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                                    <a href="#"><i class="{{ ($chef[5]->icone) }}"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
