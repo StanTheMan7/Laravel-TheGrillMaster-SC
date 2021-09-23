@@ -38,7 +38,7 @@
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
                         {{-- LOGOUT --}}
-                        <form method="POST" style="margin-top: 18px" class="page-scroll"  action="{{ route('logout') }}">
+                        <form method="POST" style="margin-top: 23px" class="page-scroll"  action="{{ route('logout') }}">
                             @csrf
                             <x-dropdown-link :href="route('logout')"
                                 onclick="event.preventDefault();

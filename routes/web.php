@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\BackHomeController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('page.home');
 });
+Route::get('/', [HomeController::class , 'index'])->name('home');
+Route::get('/backoffice', [BackHomeController::class, 'index'])->name('backoffice');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
