@@ -18,22 +18,32 @@ class PortfolioSeeder extends Seeder
             [
                 'url' => '/',
                 'titre' => 'JOHN DOE',
-                'icone' => '/'
+                'icone' => 'fa fa-twitter'
             ],
             [
                 'url' => '/',
                 'titre' => 'BARRY SCOTT',
-                'icone' => '/'
+                'icone' => 'fa fa-pinterest'
             ],
             [
                 'url' => '/',
                 'titre' => 'TOM SMOOTH',
-                'icone' => '/'
+                'icone' => 'fa fa-dribbble'
             ],
             [
                 'url' => '/',
                 'titre' => 'HARVEY WALLACE',
-                'icone' => '/'
+                'icone' => 'fa fa-facebook'
+            ],
+            [
+                'url' => '/',
+                'titre' => 'HARVEY WALLACE',
+                'icone' => 'fa fa-behance'
+            ],
+            [
+                'url' => '/',
+                'titre' => 'HARVEY WALLACE',
+                'icone' => 'fa fa-linkedin'
             ],
         ]);
     }

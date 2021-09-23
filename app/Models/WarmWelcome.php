@@ -9,7 +9,7 @@ class WarmWelcome extends Model
 {
     use HasFactory;
 
-    protected $table = 'carroussels';
+    protected $table = 'warm_welcomes';
 
     protected $fillable = [
         'titre',

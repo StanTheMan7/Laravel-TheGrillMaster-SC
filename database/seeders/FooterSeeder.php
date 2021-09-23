@@ -16,8 +16,29 @@ class FooterSeeder extends Seeder
     {
         DB::table('footers')->insert([
             [
-                'titre' => 'Copyright 2019. Designed by DISTINCTIVE THEMES'
-            ]
+                'titre' => 'Copyright 2019. Designed by DISTINCTIVE THEMES',
+                'emoji' => 'fa fa-twitter'
+            ],
+            [
+                'titre' => '',
+                'emoji' => 'fa fa-pinterest'
+            ],
+            [
+                'titre' => '',
+                'emoji' => 'fa fa-dribbble'
+            ],
+            [
+                'titre' => '',
+                'emoji' => 'fa fa-facebook'
+            ],
+            [
+                'titre' => '',
+                'emoji' => 'fa fa-behance'
+            ],
+            [
+                'titre' => '',
+                'emoji' => 'fa fa-linkedin'
+            ],
         ]);
     }
 }

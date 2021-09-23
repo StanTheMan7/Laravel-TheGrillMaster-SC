@@ -6,6 +6,7 @@ use App\Models\BookTable;
 use App\Models\Footer;
 use App\Models\HappyCustomer;
 use App\Models\Heure;
+use App\Models\LoveSteak;
 use App\Models\Navbar;
 use App\Models\Portfolio;
 use App\Models\Titre;
@@ -23,6 +24,7 @@ class HomeController extends Controller
         $chef = Portfolio::all();
         $happy = HappyCustomer::all();
         $titre = Titre::all();
-        return view('page.home', compact('footer', 'navbar', 'about', 'book_adresse', 'book_heure', 'chef', 'happy', 'titre'));
+        $steak = LoveSteak::all();
+        return view('page.home', compact('footer', 'navbar', 'about', 'book_adresse', 'book_heure', 'chef', 'happy', 'titre', 'steak'));
     }
 }
