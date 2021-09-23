@@ -21,7 +21,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="main-navigation">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about" class="page-scroll">About Us</a></li>  
+                <li><a href="#about" class="page-scroll">{{ }}</a></li>  
                 <li><a href="#about" class="page-scroll">Specials</a></li>    
                 <li><a href="#the-menu" class="page-scroll">Our Menu</a></li>      
                 <li><a href="#about" class="page-scroll">Book a Table</a></li>                 

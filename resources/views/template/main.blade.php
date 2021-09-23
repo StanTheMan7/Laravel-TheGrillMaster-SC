@@ -32,9 +32,7 @@
 
 <body id="page-top" class="regular-navigation">
 <div class="master-wrapper">
-    @include('partials.navbar')
     @yield('content')
-    @include('partials.footer')
 </div>
 
     <script src="{{asset('js/jquery.js')}}"></script>

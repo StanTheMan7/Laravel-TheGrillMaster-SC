@@ -16,15 +16,6 @@ class TitreSeeder extends Seeder
     {
         DB::table('titres')->insert([
             [
-                'titre' => 'From 1950'
-            ],
-            [
-                'titre' => 'Restaurant'
-            ],
-            [
-                'titre' => 'Bar & Lounge'
-            ],
-            [
                 'titre' => 'A Warm Welcome'
             ],
             [
