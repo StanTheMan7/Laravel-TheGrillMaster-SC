@@ -23,7 +23,10 @@ class CarrousselSeeder extends Seeder
             ],
             [
                 'url' => '/'
-            ]
+            ],
+            [
+                'url' => '/test'
+            ],
         ]);
     }
 }
