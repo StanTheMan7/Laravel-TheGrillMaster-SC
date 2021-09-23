@@ -1,7 +1,15 @@
 <?php
 
 use App\Http\Controllers\BackHomeController;
+use App\Http\Controllers\BookTableController;
+use App\Http\Controllers\CarrousselController;
+use App\Http\Controllers\FooterController;
+use App\Http\Controllers\HappyCustomerController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoveSteakController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\TitreController;
+use App\Http\Controllers\WarmWelcomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,7 +27,16 @@ Route::get('/', function () {
     return view('page.home');
 });
 Route::get('/', [HomeController::class , 'index'])->name('home');
-Route::get('/backoffice', [BackHomeController::class, 'index'])->name('backoffice');
+Route::get('/backoffices', [BackHomeController::class, 'index'])->name('backoffice');
+Route::resource('/headers' [CarrousselController::class])->middleware(['auth', 'admin']);
+Route::resource('/abouts', [WarmWelcomeController::class])->middleware(['auth', 'admin']);
+Route::resource('/loveSteaks', [LoveSteakController::class])->middleware(['auth', 'admin']);
+Route::resource('/happys', [HappyCustomerController::class])->middleware(['auth', 'admin']);
+Route::resource('/books', [BookTableController::class])->middleware(['auth', 'admin']);
+Route::resource('/portfolios', [PortfolioController::class])->middleware(['auth', 'admin']);
+Route::resource('/titles', [TitreController::class])->middleware(['auth', 'admin']);
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
