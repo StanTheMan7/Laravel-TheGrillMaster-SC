@@ -29,7 +29,7 @@
 =======
                 <li><a href="#about" class="page-scroll">{{ $navbar[0]->contenu }}</a></li>  
                 <li><a href="#about" class="page-scroll">{{ $navbar[1]->contenu }}</a></li>    
-                <li><a href="#the-menu" class="page-scroll">{{ $navbar[2]->contenu }}</a></li>      
+                <li><a href="#the-menu" class="page-scroll">{{ $navbar[2]->contenu }}</a></li>
                 <li><a href="#about" class="page-scroll">{{ $navbar[3]->contenu }}</a></li>                 
 >>>>>>> b69e80c281b1d3feab0c3bc740fa080e267178e2
                 <li class="dropdown">

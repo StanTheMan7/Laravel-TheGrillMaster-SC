@@ -14,7 +14,8 @@ class FooterController extends Controller
      */
     public function index()
     {
-        //
+        $footer = Footer::all();
+        return view('backoffice.footer.tableauFooter', compact('footer'));
     }
 
     /**
@@ -46,7 +47,7 @@ class FooterController extends Controller
      */
     public function show(Footer $footer)
     {
-        //
+        return view('backoffice.footer.showFooter', compact('footer'));
     }
 
     /**
@@ -57,7 +58,7 @@ class FooterController extends Controller
      */
     public function edit(Footer $footer)
     {
-        //
+        return view('backoffice.footer.editFooter', compact('footer'));
     }
 
     /**
@@ -69,7 +70,17 @@ class FooterController extends Controller
      */
     public function update(Request $request, Footer $footer)
     {
-        //
+        $request->validate([
+            'titre' => ['required'],
+            'emoji' => ['required']
+        ]);
+
+        $footer -> titre = $request -> titre;
+        $footer -> emoji = $request -> emoji;
+
+        $footer -> save();
+
+        return redirect() -> route('footer.index') -> with('message', 'Footer modifié !');
     }
 
     /**

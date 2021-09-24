@@ -14,7 +14,8 @@ class BookTableController extends Controller
      */
     public function index()
     {
-        //
+        $book_adresse = BookTable::all();
+        return view('backoffice.book.tableauBook', compact('book_adresse'));
     }
 
     /**
@@ -46,7 +47,7 @@ class BookTableController extends Controller
      */
     public function show(BookTable $bookTable)
     {
-        //
+        return view('backoffice.book.showBook', compact('book_adresse'));
     }
 
     /**
@@ -57,7 +58,7 @@ class BookTableController extends Controller
      */
     public function edit(BookTable $bookTable)
     {
-        //
+        return view('backoffice.book.editBook', compact('book_adresse'));
     }
 
     /**
@@ -69,7 +70,19 @@ class BookTableController extends Controller
      */
     public function update(Request $request, BookTable $bookTable)
     {
-        //
+        $request->validate([
+            'building' => ['required'],
+            'adresse' => ['required'],
+            'telephone' => ['required']
+        ]);
+
+        $bookTable -> building = $request -> building;
+        $bookTable -> adresse = $request -> adresse;
+        $bookTable -> telephone = $request -> telephone;
+
+        $bookTable -> save();
+
+        return redirect() -> route('bookTable.index') -> with('message', 'Adresse Modifiée !');
     }
 
     /**
