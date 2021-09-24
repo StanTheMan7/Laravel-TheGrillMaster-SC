@@ -6,6 +6,7 @@ use App\Models\BookTable;
 use App\Models\Footer;
 use App\Models\HappyCustomer;
 use App\Models\Heure;
+use App\Models\LoveSteak;
 use App\Models\Navbar;
 use App\Models\Portfolio;
 use App\Models\Role;
@@ -20,6 +21,7 @@ class BackHomeController extends Controller
         $footer = Footer::all();
         $navbar = Navbar::all();
         $about = WarmWelcome::all();
+        $steak = LoveSteak::all();
         $book_adresse = BookTable::all();
         $book_heure = Heure::all();
         $chef = Portfolio::all();
@@ -27,6 +29,6 @@ class BackHomeController extends Controller
         $titre = Titre::all();
         $role = Role::all();
         $user = User::all();
-        return view('dashboard', compact('footer', 'navbar', 'about', 'book_adresse', 'book_heure', 'chef', 'happy', 'titre', 'role', 'user'));
+        return view('dashboard', compact('footer', 'navbar', 'about', 'steak', 'book_adresse', 'book_heure', 'chef', 'happy', 'titre', 'role', 'user'));
     }
 }

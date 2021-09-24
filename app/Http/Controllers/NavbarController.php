@@ -14,7 +14,7 @@ class NavbarController extends Controller
      */
     public function index()
     {
-        //
+        return view('backoffice.navbar.tableauNav', compact('navbar'));
     }
 
     /**
@@ -46,7 +46,7 @@ class NavbarController extends Controller
      */
     public function show(Navbar $navbar)
     {
-        //
+        return view('backoffice.navbar.showNav', compact('navbar'));
     }
 
     /**
@@ -57,7 +57,7 @@ class NavbarController extends Controller
      */
     public function edit(Navbar $navbar)
     {
-        //
+        return view('backoffice.navbar.editNav', compact('navbar'));
     }
 
     /**
@@ -69,7 +69,15 @@ class NavbarController extends Controller
      */
     public function update(Request $request, Navbar $navbar)
     {
-        //
+        $request->validate([
+            'contenu' => ['required']
+        ]);
+
+        $navbar -> contenu = $request -> contenu;
+
+        $navbar -> save();
+
+        return redirect() -> route('navbar.index') -> with('message', 'Navbar modifiée !');
     }
 
     /**

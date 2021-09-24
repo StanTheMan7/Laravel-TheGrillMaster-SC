@@ -14,7 +14,8 @@ class WarmWelcomeController extends Controller
      */
     public function index()
     {
-        //
+        $warmWelcome = WarmWelcome::all();
+        return view('backoffice.about.tableauAbout', compact('warmWelcome'));
     }
 
     /**
@@ -46,7 +47,7 @@ class WarmWelcomeController extends Controller
      */
     public function show(WarmWelcome $warmWelcome)
     {
-        //
+        return view('backoffice.about.showAbout', compact('warmWelcome'));
     }
 
     /**
@@ -57,7 +58,7 @@ class WarmWelcomeController extends Controller
      */
     public function edit(WarmWelcome $warmWelcome)
     {
-        //
+        return view('backoffice.about.editAbout', compact('warmWelcome'));
     }
 
     /**
@@ -69,7 +70,19 @@ class WarmWelcomeController extends Controller
      */
     public function update(Request $request, WarmWelcome $warmWelcome)
     {
-        //
+        $request->validate([
+            'titre' => ['required'],
+            'description_grand' => ['required'],
+            'description_petit' => ['required'],
+        ]);
+
+        $warmWelcome -> titre = $request -> titre;
+        $warmWelcome -> description_grand = $request -> description_grand;
+        $warmWelcome -> description_petit = $request -> description_petit;
+
+        $warmWelcome -> save();
+
+        return redirect() -> route('warmWelcome.index') -> with('message', 'Element modifié !');
     }
 
     /**
