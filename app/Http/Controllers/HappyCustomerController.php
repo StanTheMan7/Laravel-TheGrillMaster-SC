@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\HappyCustomer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class HappyCustomerController extends Controller
 {
@@ -14,7 +15,8 @@ class HappyCustomerController extends Controller
      */
     public function index()
     {
-        //
+        $happyCustomer = HappyCustomer::all();
+        return view('backoffice.happy.tableauHappy', compact('happyCustomer'));
     }
 
     /**
@@ -46,7 +48,7 @@ class HappyCustomerController extends Controller
      */
     public function show(HappyCustomer $happyCustomer)
     {
-        //
+        return view('backoffice.happy.showHappy', compact('happyCustomer'));
     }
 
     /**
@@ -57,7 +59,7 @@ class HappyCustomerController extends Controller
      */
     public function edit(HappyCustomer $happyCustomer)
     {
-        //
+        return view('backoffice.happy.editHappy', compact('happyCustomer'));
     }
 
     /**
@@ -69,7 +71,25 @@ class HappyCustomerController extends Controller
      */
     public function update(Request $request, HappyCustomer $happyCustomer)
     {
-        //
+        $request->validate([
+            'url' => ['required'],
+            'titre' => ['required'],
+            'icone' => ['required'],
+            'description' => ['required'],
+        ]);
+
+        Storage::disk("public") -> delete("image/" . $happyCustomer->url);
+
+        $happyCustomer -> url = $request -> file("url") -> hashName();
+        $happyCustomer -> titre = $request -> titre;
+        $happyCustomer -> icone = $request -> icone;
+        $happyCustomer -> description = $request -> description;
+
+        $happyCustomer -> save();
+
+        $request -> file("url") -> storePublicly("image", "public");
+
+        return redirect() -> route('happycustomer.index') -> with('message', 'Client modifié !');
     }
 
     /**

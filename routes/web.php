@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\BackHomeController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NavbarController;
+use App\Models\HappyCustomer;
 use Illuminate\Support\Facades\Route;
 
 /*

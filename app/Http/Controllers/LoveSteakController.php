@@ -14,7 +14,8 @@ class LoveSteakController extends Controller
      */
     public function index()
     {
-        //
+        $loveSteak = LoveSteak::all();
+        return view('backoffice.about2.tableauAbout', compact('loveSteak'));
     }
 
     /**
@@ -46,7 +47,7 @@ class LoveSteakController extends Controller
      */
     public function show(LoveSteak $loveSteak)
     {
-        //
+        return view('backoffice.about2.showAbout', compact('loveSteak'));
     }
 
     /**
@@ -57,7 +58,7 @@ class LoveSteakController extends Controller
      */
     public function edit(LoveSteak $loveSteak)
     {
-        //
+        return view('backoffice.about2.editAbout', compact('loveSteak'));
     }
 
     /**
@@ -69,7 +70,19 @@ class LoveSteakController extends Controller
      */
     public function update(Request $request, LoveSteak $loveSteak)
     {
-        //
+        $request->validate([
+            'titre' => ['requested'],
+            'description' => ['requested'],
+            'bouton' => ['requested']
+        ]);
+
+        $loveSteak -> titre = $request -> titre;
+        $loveSteak -> description = $request -> description;
+        $loveSteak -> bouton = $request -> bouton;
+
+        $loveSteak -> save();
+
+        return redirect() -> route('lovesteak.index') -> with('message', 'Elément changé !');
     }
 
     /**
