@@ -28,7 +28,7 @@ Route::get('/', function () {
 });
 Route::get('/', [HomeController::class , 'index'])->name('home');
 Route::get('/backoffices', [BackHomeController::class, 'index'])->name('backoffice');
-Route::resource('/headers' [CarrousselController::class])->middleware(['auth', 'admin']);
+Route::resource('/section',[CarrousselController::class])->middleware(['auth', 'admin']);
 Route::resource('/abouts', [WarmWelcomeController::class])->middleware(['auth', 'admin']);
 Route::resource('/loveSteaks', [LoveSteakController::class])->middleware(['auth', 'admin']);
 Route::resource('/happys', [HappyCustomerController::class])->middleware(['auth', 'admin']);
