@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Footer;
+use App\Models\User;
 use Illuminate\Http\Request;
 
-class FooterController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,7 @@ class FooterController extends Controller
      */
     public function index()
     {
-        $footer = Footer::all();
-        return view('backoffice.footer.tableauFooter', compact('footer'));
+        //
     }
 
     /**
@@ -42,54 +41,44 @@ class FooterController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Footer  $footer
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function show(Footer $footer)
+    public function show(User $user)
     {
-        return view('backoffice.footer.showFooter', compact('footer'));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Footer  $footer
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(Footer $footer)
+    public function edit(User $user)
     {
-        return view('backoffice.footer.editFooter', compact('footer'));
+        //
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Footer  $footer
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Footer $footer)
+    public function update(Request $request, User $user)
     {
-        $request->validate([
-            'titre' => ['required'],
-            'emoji' => ['required']
-        ]);
-
-        $footer -> titre = $request -> titre;
-        $footer -> emoji = $request -> emoji;
-
-        $footer -> save();
-
-        return redirect() -> route('footer.index') -> with('message', 'Footer modifié !');
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Footer  $footer
+     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Footer $footer)
+    public function destroy(User $user)
     {
         //
     }

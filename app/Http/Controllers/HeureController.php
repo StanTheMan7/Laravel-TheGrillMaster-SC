@@ -14,7 +14,8 @@ class HeureController extends Controller
      */
     public function index()
     {
-        //
+        $heure = Heure::all();
+        return view('backoffice.book2.tableauBook', compact('heure'));
     }
 
     /**
@@ -46,7 +47,7 @@ class HeureController extends Controller
      */
     public function show(Heure $heure)
     {
-        //
+        return view('backoffice.book2.showBook', compact('heure'));
     }
 
     /**
@@ -57,7 +58,7 @@ class HeureController extends Controller
      */
     public function edit(Heure $heure)
     {
-        //
+        return view('backoffice.book2.editBook', compact('heure'));
     }
 
     /**
@@ -69,7 +70,17 @@ class HeureController extends Controller
      */
     public function update(Request $request, Heure $heure)
     {
-        //
+        $request->validate([
+            'jour' => ['requested'],
+            'heure' => ['requested']
+        ]);
+
+        $heure -> jour = $request -> jour;
+        $heure -> heure = $request -> heure;
+
+        $heure -> save();
+
+        return redirect() -> route('heure.index') -> with('message', 'Horaire modifié !');
     }
 
     /**
