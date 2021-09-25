@@ -14,8 +14,8 @@ class WarmWelcomeController extends Controller
      */
     public function index()
     {
-        $warmWelcome = WarmWelcome::all();
-        return view('backoffice.about.tableauAbout', compact('warmWelcome'));
+        $warmWelcomes = WarmWelcome::all();
+        return view('backoffice.about.tableauAbout', compact('warmWelcomes'));
     }
 
     /**

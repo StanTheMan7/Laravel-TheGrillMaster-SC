@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Portfolio;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class PortfolioController extends Controller
 {
@@ -14,7 +15,8 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        //
+        $portfolio = Portfolio::all();
+        return view('backoffice.chefs.tableauChef', compact('portfolio'));
     }
 
     /**
@@ -24,7 +26,7 @@ class PortfolioController extends Controller
      */
     public function create()
     {
-        //
+        return view('backoffice.chefs.createChef');
     }
 
     /**
@@ -35,7 +37,23 @@ class PortfolioController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'url' => ['required'],
+            'titre' => ['required'],
+            'icone' => ['required'],
+        ]);
+
+        $table = new Portfolio;
+
+        $table -> url = $request -> file("url") -> hashName();
+        $table -> titre = $request -> titre;
+        $table -> icone = $request -> icone;
+
+        $table -> save();
+
+        $request -> file("url") -> storePublicly("image", "public");
+
+        return redirect() -> route('portfolio.index') -> with('message', 'Chef créé !');
     }
 
     /**
@@ -46,7 +64,7 @@ class PortfolioController extends Controller
      */
     public function show(Portfolio $portfolio)
     {
-        //
+        return view('backoffice.chefs.showChef', compact('portfolio'));
     }
 
     /**
@@ -57,7 +75,7 @@ class PortfolioController extends Controller
      */
     public function edit(Portfolio $portfolio)
     {
-        //
+        return view('backoffice.chefs.editChef', compact('portfolio'));
     }
 
     /**
@@ -69,7 +87,23 @@ class PortfolioController extends Controller
      */
     public function update(Request $request, Portfolio $portfolio)
     {
-        //
+        $request->validate([
+            'url' => ['required'],
+            'titre' => ['required'],
+            'icone' => ['required'],
+        ]);
+
+        Storage::disk("public") -> delete("image/" . $portfolio->url);
+
+        $portfolio -> url = $request -> file("url") -> hashName();
+        $portfolio -> titre = $request -> titre;
+        $portfolio -> icone = $request -> icone;
+
+        $portfolio -> save();
+
+        $request -> file("url") -> storePublicly("image", "public");
+
+        return redirect() -> route('portfolio.index') -> with('message', 'Chef modifié !');
     }
 
     /**

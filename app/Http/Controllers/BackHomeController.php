@@ -29,6 +29,6 @@ class BackHomeController extends Controller
         $titre = Titre::all();
         $role = Role::all();
         $user = User::all();
-        return view('dashboard', compact('footer', 'navbar', 'about', 'steak', 'book_adresse', 'book_heure', 'chef', 'happy', 'titre', 'role', 'user'));
+        return view('backoffice.homeBack.homeB', compact('footer', 'navbar', 'about', 'steak', 'book_adresse', 'book_heure', 'chef', 'happy', 'titre', 'role', 'user'));
     }
 }

@@ -21,17 +21,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="main-navigation">
             <ul class="nav navbar-nav navbar-right">
-<<<<<<< HEAD
-                <li><a href="#about" class="page-scroll">About</a></li>  
-                <li><a href="#about" class="page-scroll">Specials</a></li>    
-                <li><a href="#the-menu" class="page-scroll">Our Menu</a></li>      
-                <li><a href="#about" class="page-scroll">Book a Table</a></li>                 
-=======
                 <li><a href="#about" class="page-scroll">{{ $navbar[0]->contenu }}</a></li>  
                 <li><a href="#about" class="page-scroll">{{ $navbar[1]->contenu }}</a></li>    
                 <li><a href="#the-menu" class="page-scroll">{{ $navbar[2]->contenu }}</a></li>
                 <li><a href="#about" class="page-scroll">{{ $navbar[3]->contenu }}</a></li>                 
->>>>>>> b69e80c281b1d3feab0c3bc740fa080e267178e2
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-hover="dropdown" data-toggle="dropdown">{{ $navbar[4]->contenu }} <span class="pe-7s-angle-down"></span></a>
                     <ul class="dropdown-menu" role="menu">
@@ -41,11 +34,11 @@
                 <li><a href="#search"><i class="fa fa-search"></i></a></li>
                 @auth
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{ route('dashboard') }}">Dashboard</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{ route('homeBO') }}">Dashboard</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
                         {{-- LOGOUT --}}
-                        <form method="POST" style="margin-top: 23px" class="page-scroll"  action="{{ route('logout') }}">
+                        <form method="POST" class="nav-link py-3 px-0 px-lg-3 rounded" action="{{ route('logout') }}">
                             @csrf
                             <x-dropdown-link :href="route('logout')"
                                 onclick="event.preventDefault();
@@ -66,7 +59,7 @@
                             </li>
                         @endif
 
-                @endauth
+@endauth
             </ul>
 
         </div>
