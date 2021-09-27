@@ -100,6 +100,8 @@ class HappyCustomerController extends Controller
      */
     public function destroy(HappyCustomer $happyCustomer)
     {
-        //
+        Storage::disk("public") -> delete("image/" . $happyCustomer->url);
+        $happyCustomer->delete();
+        return redirect()->route("happyCustomers.index")->with('message','IT WORKS item succesfully deleted');
     }
 }

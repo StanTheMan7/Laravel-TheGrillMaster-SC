@@ -93,6 +93,7 @@ class WarmWelcomeController extends Controller
      */
     public function destroy(WarmWelcome $warmWelcome)
     {
-        //
+        $warmWelcome->delete();
+        return redirect()->route("warmWelcomes.index")->with('message','IT WORKS item succesfully deleted');
     }
 }

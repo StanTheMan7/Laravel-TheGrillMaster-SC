@@ -89,6 +89,7 @@ class NavbarController extends Controller
      */
     public function destroy(Navbar $navbar)
     {
-        //
+        $navbar->delete();
+        return redirect()->route("navbars.index")->with('message','IT WORKS item succesfully deleted');
     }
 }

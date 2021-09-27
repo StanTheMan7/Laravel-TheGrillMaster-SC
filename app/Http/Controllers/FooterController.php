@@ -91,6 +91,7 @@ class FooterController extends Controller
      */
     public function destroy(Footer $footer)
     {
-        //
+        $footer->delete();
+        return redirect()->route("footers.index")->with('message','IT WORKS item succesfully deleted');
     }
 }

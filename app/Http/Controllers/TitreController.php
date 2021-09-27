@@ -89,6 +89,7 @@ class TitreController extends Controller
      */
     public function destroy(Titre $titre)
     {
-        //
+        $titre->delete();
+        return redirect()->route("titres.index")->with('message','IT WORKS item succesfully deleted');
     }
 }

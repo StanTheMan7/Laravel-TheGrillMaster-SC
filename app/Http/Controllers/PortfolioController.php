@@ -114,6 +114,8 @@ class PortfolioController extends Controller
      */
     public function destroy(Portfolio $portfolio)
     {
-        //
+        Storage::disk("public") -> delete("image/" . $portfolio->url);
+        $portfolio->delete();
+        return redirect()->route("portfolios.index")->with('message','IT WORKS item succesfully deleted');
     }
 }

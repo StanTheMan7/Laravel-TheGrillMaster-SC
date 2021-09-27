@@ -91,6 +91,7 @@ class HeureController extends Controller
      */
     public function destroy(Heure $heure)
     {
-        //
+        $heure->delete();
+        return redirect()->route("heures.index")->with('message','IT WORKS item succesfully deleted');
     }
 }

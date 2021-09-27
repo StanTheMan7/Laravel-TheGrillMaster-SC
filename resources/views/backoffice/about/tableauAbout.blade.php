@@ -20,6 +20,15 @@
         <td>{{$item->titre}}</td>
         <td>{{$item->description_grand}}</td>
         <td>{{$item->description_petit}}</td>
+        <td><a class="btn btn-warning" href="{{route('warmWelcomes.edit', $item->id)}}">Edit title</a> </td>
+        <td><a class="btn btn-warning" href="{{route('warmWelcomes.show', $item->id)}}">Show</a> </td>
+        <td>
+          <form action="{{route('warmWelcomes.destroy', $item->id)}}" method="post">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-danger">Delete</button>
+          </form>
+        </td>
       </tr>
       @endforeach
     </tbody>

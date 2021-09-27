@@ -93,6 +93,7 @@ class LoveSteakController extends Controller
      */
     public function destroy(LoveSteak $loveSteak)
     {
-        //
+        $loveSteak->delete();
+        return redirect()->route("loveSteaks.index")->with('message','IT WORKS item succesfully deleted');
     }
 }
