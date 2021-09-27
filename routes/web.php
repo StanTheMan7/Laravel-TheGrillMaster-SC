@@ -32,11 +32,11 @@ Route::resource('/navbars', NavbarController::class)->middleware(['auth', 'admin
 Route::resource('/carousels', CarrousselController::class)->middleware(['auth', 'admin']);
 Route::resource('/warmWelcomes', WarmWelcomeController::class)->middleware(['auth', 'admin']);
 Route::resource('/loveSteaks', LoveSteakController::class)->middleware(['auth', 'admin']);
-Route::resource('/happyCustomers', HappyCustomerController::class)->middleware(['auth', 'admin']);
+Route::resource('/happyCustomers', HappyCustomerController::class)->middleware(['auth', 'editeur']);
 Route::resource('/bookTables', BookTableController::class)->middleware(['auth', 'admin']);
 Route::resource('/heure', HeureController::class)->middleware(['auth', 'admin']);
 Route::resource('/portfolios', PortfolioController::class)->middleware(['auth', 'admin']);
-Route::resource('/titles', TitreController::class)->middleware(['auth', 'admin']);
+Route::resource('/titles', TitreController::class)->middleware(['auth', 'webmaster']);
 Route::resource('/footers', FooterController::class)->middleware(['auth', 'admin']);
 
 Route::get('/homeback', [NavbarController::class, 'index'])->name('navbar');
