@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center mb100">                        
-                    <h2 class="section-heading">{{ ($about[0]->titre) }}</h2>
+                    <h2 class="section-heading">{{ ($titre[0]->titre) }}</h2>
                     <hr class="thin-hr">
                     <h3 class="section-subheading secondary-font">{{ ($titre[1]->titre) }}</h3>
                     

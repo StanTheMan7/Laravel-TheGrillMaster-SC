@@ -1,3 +1,6 @@
+@extends('template.mainB')
+
+@section('contentB')
 <div class="container ">
     <h2 class="text-center mb-5">DATA Warm Welcome</h2>
 
@@ -23,3 +26,5 @@
   </table>
 
 </div>
+
+@endsection

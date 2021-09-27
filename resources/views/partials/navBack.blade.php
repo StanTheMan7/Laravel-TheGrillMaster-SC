@@ -86,9 +86,9 @@
      </li>
     </ul>
   </div>
-  <section class="home-section">
+  {{-- <section class="home-section">
       <div class="text">Dashboard</div>
-  </section>
+  </section> --}}
   <script>
   let sidebar = document.querySelector(".sidebar");
   let closeBtn = document.querySelector("#btn");

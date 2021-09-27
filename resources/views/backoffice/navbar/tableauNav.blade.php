@@ -1,7 +1,7 @@
-@extends('backoffice.homeBack.homeB')
+@extends('template.mainB')
 
 @section('contentB')
-<div class="container ">
+<div class="container">
     <h2 class="text-center mb-5">DATA NavBar</h2>
 
 <table class="table">
