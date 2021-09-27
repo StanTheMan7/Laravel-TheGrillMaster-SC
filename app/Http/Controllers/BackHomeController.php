@@ -20,15 +20,15 @@ class BackHomeController extends Controller
     public function index() {
         $footer = Footer::all();
         $navbar = Navbar::all();
-        $about = WarmWelcome::all();
-        $steak = LoveSteak::all();
+        $warmWelcome = WarmWelcome::all();
+        $loveSteak = LoveSteak::all();
         $book_adresse = BookTable::all();
-        $book_heure = Heure::all();
-        $chef = Portfolio::all();
-        $happy = HappyCustomer::all();
+        $heure = Heure::all();
+        $portfolio = Portfolio::all();
+        $happyCustomer = HappyCustomer::all();
         $titre = Titre::all();
         $role = Role::all();
         $user = User::all();
-        return view('backoffice.homeBack.homeB', compact('footer', 'navbar', 'about', 'steak', 'book_adresse', 'book_heure', 'chef', 'happy', 'titre', 'role', 'user'));
+        return view('backoffice.homeBack.homeB', compact('footer', 'navbar', 'warmWelcome', 'book_adresse', 'heure', 'portfolio', 'happyCustomer', 'titre', 'loveSteak','role', 'user'));
     }
 }

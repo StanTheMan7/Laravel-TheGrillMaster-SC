@@ -4,9 +4,11 @@
 <div class="card" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title"></h5>
-        <p class="card-text">{{$warmWelcome->titre}}</p>
-    <a class="btn btn-warning" href="{{route('warmWelcomes.edit', $warmWelcome->id)}}">Edit URL</a>
-    <form action="{{route('portfolios.destroy', $warmWelcome->id)}}" method="post">
+        <p class="card-text">{{$item->titre}}</p>
+        <p class="card-text">{{$item->description_grand}}</p>
+        <p class="card-text">{{$item->description_petit}}</p>
+    <a class="btn btn-warning" href="{{route('warmWelcomes.edit', $item->id)}}">Edit warmWelcome</a>
+    <form action="{{route('warmWelcomes.destroy', $item->id)}}" method="post">
     @csrf
     @method('DELETE')
     <button type="submit" class="btn btn-danger">Delete</button>

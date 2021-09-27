@@ -1,65 +1,18 @@
+
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="{{asset('img/ico/favicon.ico')}}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{asset('img/ico/apple-touch-icon-144x144.png')}}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{asset('img/ico/apple-touch-icon-114x114.png')}}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{asset('img/ico/apple-touch-icon-72x72.png')}}">
-    <link rel="apple-touch-icon" href="{{asset('img/ico/apple-touch-icon-57x57.png')}}">
-
-    <title>The Grill by Distinctive Themes</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{asset('css/animate.css')}}" rel="stylesheet">
-    <link href="{{asset('css/plugins.css')}}" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="{{asset('css/style.css')}}" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="{{asset('font-awesome-4.1.0/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{asset('css/pe-icons.css')}}" rel="stylesheet">
-
-</head>
-
-<body id="page-top" class="regular-navigation">
-    @include('partials.navBack')
-<div class="master-wrapper">
-    @yield('contentB')
-</div>
-
-    <script src="{{asset('js/jquery.js')}}"></script>
-    <script src="{{asset('js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('js/plugins.js')}}"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script src="{{asset('js/init.js')}}"></script>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    <script type="text/javascript">
-    $(document).ready(function(){
-       'use strict';
-        jQuery('#headerwrap').backstretch([
-          "img/bg/bg1.jpg",
-          "img/bg/bg2.jpg",
-          "img/bg/bg3.jpg",
-        ], {duration: 8000, fade: 500});
-    });
-    </script>
-
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  @include('partials.navBack')
+  @yield('contentB')
+  <script src="{{asset('js/app.js')}}"></script>
 </body>
-
 </html>
