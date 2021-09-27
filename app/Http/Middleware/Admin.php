@@ -19,6 +19,8 @@ class Admin
     {
         if (Auth::user()->role->name == "Admin") {
             return $next($request);
+        } else {
+            abort(403);
         }
     }
 }

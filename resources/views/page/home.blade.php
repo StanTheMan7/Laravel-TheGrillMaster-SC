@@ -5,6 +5,7 @@
 @include('partials.navbar')
 @include('partials.header')
 @include('partials.sectionAbout')
+@include('partials.loveSteak')
 @include('partials.sectionHappy')
 @include('partials.sectionBook')
 @include('partials.sectionChefs')
