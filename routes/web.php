@@ -39,4 +39,6 @@ Route::resource('/portfolios', PortfolioController::class)->middleware(['auth', 
 Route::resource('/titles', TitreController::class)->middleware(['auth', 'admin']);
 Route::resource('/footers', FooterController::class)->middleware(['auth', 'admin']);
 
+Route::get('/homeback', [NavbarController::class, 'index'])->name('navbar');
+
 require __DIR__.'/auth.php';
