@@ -14,4 +14,6 @@
             </div>
         </div>
     </div>
+
+    <a href="{{ route('navbar') }}">navbar</a>
 </x-app-layout>
