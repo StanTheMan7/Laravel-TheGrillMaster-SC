@@ -1,8 +1,8 @@
-<div class="preloader">
+{{-- <div class="preloader">
     <div class="preloader-img">
         <span class="loading-animation animate-flicker"><img src="{{asset('img/loading.GIF')}}" alt="loading" /></span>
     </div>
-</div>
+</div> --}}
 
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top fadeInDown" data-wow-delay="0.2s">

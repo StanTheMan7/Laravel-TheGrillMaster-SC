@@ -2,7 +2,7 @@
 
 @section('contentB')
 
-@include('partials.navbar')
+@include('partials.navBack')
 @include('partials.header')
 @include('partials.sectionAbout')
 @include('partials.loveSteak')

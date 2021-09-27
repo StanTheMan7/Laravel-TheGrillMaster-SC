@@ -13,7 +13,7 @@
         </tr>
     </thead>
     <tbody>
-    @foreach ($footer as $item)
+    @foreach ($happyCustomer as $item)
       <tr>
         <th scope="row">{{$item->id}}</th>
         <td>{{$item->url}}</td>

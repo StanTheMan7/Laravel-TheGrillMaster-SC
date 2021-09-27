@@ -1,3 +1,6 @@
+@extends('backoffice.homeBack.homeB')
+
+@section('contentB')
 <div class="container ">
     <h2 class="text-center mb-5">DATA NavBar</h2>
 
@@ -10,7 +13,7 @@
         </tr>
     </thead>
     <tbody>
-    @foreach ($footer as $item)
+    @foreach ($navbar as $item)
       <tr>
         <th scope="row">{{$item->id}}</th>
         <td>{{$item->contenu}}</td>
@@ -20,3 +23,4 @@
   </table>
 
 </div>
+@endsection
