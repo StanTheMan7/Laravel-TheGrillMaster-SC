@@ -24,24 +24,24 @@
                     <div class="row">
                       <div class="col-xs-5">
                         <ul class="list-unstyled weekdays">
-                          <li>{{ ($book_heure[0]->jour) }}</li>
-                          <li>{{ ($book_heure[1]->jour) }}</li>
-                          <li>{{ ($book_heure[2]->jour) }}</li>
-                          <li>{{ ($book_heure[3]->jour) }}</li>
-                          <li>{{ ($book_heure[4]->jour) }}</li>
-                          <li>{{ ($book_heure[5]->jour) }}</li>
-                          <li>{{ ($book_heure[6]->jour) }}</li>
+                          <li>{{ ($heure[0]->jour) }}</li>
+                          <li>{{ ($heure[1]->jour) }}</li>
+                          <li>{{ ($heure[2]->jour) }}</li>
+                          <li>{{ ($heure[3]->jour) }}</li>
+                          <li>{{ ($heure[4]->jour) }}</li>
+                          <li>{{ ($heure[5]->jour) }}</li>
+                          <li>{{ ($heure[6]->jour) }}</li>
                         </ul>
                       </div>
                       <div class="col-xs-7">
                         <ul class="list-unstyled">
-                          <li>{{ ($book_heure[0]->heure) }}</li>
-                          <li>{{ ($book_heure[1]->heure) }}</li>
-                          <li>{{ ($book_heure[2]->heure) }}</li>
-                          <li>{{ ($book_heure[3]->heure) }}</li>
-                          <li>{{ ($book_heure[4]->heure) }}</li>
-                          <li>{{ ($book_heure[5]->heure) }}</li>
-                          <li>{{ ($book_heure[6]->heure) }}</li>
+                          <li>{{ ($heure[0]->heure) }}</li>
+                          <li>{{ ($heure[1]->heure) }}</li>
+                          <li>{{ ($heure[2]->heure) }}</li>
+                          <li>{{ ($heure[3]->heure) }}</li>
+                          <li>{{ ($heure[4]->heure) }}</li>
+                          <li>{{ ($heure[5]->heure) }}</li>
+                          <li>{{ ($heure[6]->heure) }}</li>
                         </ul>
                       </div>
                     </div>

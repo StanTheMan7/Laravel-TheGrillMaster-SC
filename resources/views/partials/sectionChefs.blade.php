@@ -22,25 +22,25 @@
                                     <div class="col-xs-12 overlay-item-caption smoothie"></div>
                                     <div class="col-xs-12 hover-item-caption smoothie">
                                         <div class="vertical-center">
-                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">{{ ($chef[0]->titre) }}</a></h3>
+                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">{{ ($portfolio[0]->titre) }}</a></h3>
                                             <ul class="smoothie list-inline social-links wow fadeIn" data-wow-delay="0.2s">
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[0]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[0]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[1]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[1]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[2]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[2]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[3]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[3]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[4]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[4]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[5]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[5]->icone) }}"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -56,25 +56,25 @@
                                     <div class="col-xs-12 overlay-item-caption smoothie"></div>
                                     <div class="col-xs-12 hover-item-caption smoothie">
                                         <div class="vertical-center">
-                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">{{ ($chef[1]->titre) }}</a></h3>
+                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">{{ ($portfolio[1]->titre) }}</a></h3>
                                             <ul class="smoothie list-inline social-links wow fadeIn" data-wow-delay="0.2s">
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[0]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[0]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[1]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[1]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[2]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[2]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[3]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[3]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[4]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[4]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[5]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[5]->icone) }}"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -90,25 +90,25 @@
                                     <div class="col-xs-12 overlay-item-caption smoothie"></div>
                                     <div class="col-xs-12 hover-item-caption smoothie">
                                         <div class="vertical-center">
-                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">{{ ($chef[2]->titre) }}</a></h3>
+                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">{{ ($portfolio[2]->titre) }}</a></h3>
                                             <ul class="smoothie list-inline social-links wow fadeIn" data-wow-delay="0.2s">
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[0]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[0]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[1]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[1]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[2]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[2]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[3]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[3]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[4]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[4]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[5]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[5]->icone) }}"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -124,25 +124,25 @@
                                     <div class="col-xs-12 overlay-item-caption smoothie"></div>
                                     <div class="col-xs-12 hover-item-caption smoothie">
                                         <div class="vertical-center">
-                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">{{ ($chef[3]->titre) }}</a></h3>
+                                            <h3 class="smoothie"><a href="single-portfolio.html" title="view project">{{ ($portfolio[3]->titre) }}</a></h3>
                                             <ul class="smoothie list-inline social-links wow fadeIn" data-wow-delay="0.2s">
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[0]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[0]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[1]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[1]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[2]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[2]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[3]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[3]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[4]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[4]->icone) }}"></i></a>
                                                 </li>
                                                 <li>
-                                                    <a href="#"><i class="{{ ($chef[5]->icone) }}"></i></a>
+                                                    <a href="#"><i class="{{ ($portfolio[5]->icone) }}"></i></a>
                                                 </li>
                                             </ul>
                                         </div>

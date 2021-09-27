@@ -15,8 +15,8 @@ class CreateNavbarsTable extends Migration
     {
         Schema::create('navbars', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
             $table->string('contenu');
+            $table->timestamps();
         });
     }
 

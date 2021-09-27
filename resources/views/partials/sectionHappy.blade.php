@@ -21,14 +21,14 @@
                                             <img src="{{asset('img/team/small1.jpg')}}" class="img-responsive testimonial-author" alt="">
                                         </div>
                                         <div class="col-sm-10">                                                
-                                            <h4>{{ ($happy[0]->titre) }}</h4>
-                                            <p>{{ ($happy[0]->description) }}</p>
+                                            <h4>{{ ($happyCustomer[0]->titre) }}</h4>
+                                            <p>{{ ($happyCustomer[0]->description) }}</p>
                                             <ul class="list-inline">
-                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
-                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
-                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
-                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
-                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happyCustomer[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happyCustomer[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happyCustomer[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happyCustomer[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happyCustomer[0]->icone) }}"></i></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -43,14 +43,14 @@
                                             <img src="{{asset('img/team/small1.jpg')}}" class="img-responsive testimonial-author" alt="">
                                         </div>
                                         <div class="col-sm-10">                                                
-                                            <h4>{{ ($happy[0]->titre) }}</h4>
-                                            <p>{{ ($happy[0]->description) }}</p>
+                                            <h4>{{ ($happyCustomer[0]->titre) }}</h4>
+                                            <p>{{ ($happyCustomer[0]->description) }}</p>
                                             <ul class="list-inline">
-                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
-                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
-                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
-                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
-                                                <li><i class="{{ ($happy[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happyCustomer[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happyCustomer[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happyCustomer[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happyCustomer[0]->icone) }}"></i></li>
+                                                <li><i class="{{ ($happyCustomer[0]->icone) }}"></i></li>
                                             </ul>
                                         </div>
                                     </div>

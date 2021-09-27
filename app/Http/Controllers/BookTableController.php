@@ -93,6 +93,7 @@ class BookTableController extends Controller
      */
     public function destroy(BookTable $bookTable)
     {
-        //
+        $bookTable->delete();
+        return redirect()->route("bookTables.index")->with('message','IT WORKS item succesfully deleted');
     }
 }

@@ -1,8 +1,8 @@
-<div class="preloader">
+{{-- <div class="preloader">
     <div class="preloader-img">
         <span class="loading-animation animate-flicker"><img src="{{asset('img/loading.GIF')}}" alt="loading" /></span>
     </div>
-</div>
+</div> --}}
 
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top fadeInDown" data-wow-delay="0.2s">
@@ -34,11 +34,11 @@
                 <li><a href="#search"><i class="fa fa-search"></i></a></li>
                 @auth
                     <li class="nav-item mx-0 mx-lg-1">
-                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{ route('dashboard') }}">Dashboard</a>
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{ route('backoffice') }}">Dashboard</a>
                     </li>
                     <li class="nav-item mx-0 mx-lg-1">
                         {{-- LOGOUT --}}
-                        <form method="POST" style="margin-top: 23px" class="page-scroll"  action="{{ route('logout') }}">
+                        <form method="POST" style="margin-top: 22px " class="nav-link py-3 px-0 px-lg-3 rounded" action="{{ route('logout') }}">
                             @csrf
                             <x-dropdown-link :href="route('logout')"
                                 onclick="event.preventDefault();
@@ -59,7 +59,7 @@
                             </li>
                         @endif
 
-                @endauth
+@endauth
             </ul>
 
         </div>

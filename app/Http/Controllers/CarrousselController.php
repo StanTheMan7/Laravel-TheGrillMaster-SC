@@ -80,6 +80,6 @@ class CarrousselController extends Controller
      */
     public function destroy(Carroussel $carroussel)
     {
-        //
+    
     }
 }

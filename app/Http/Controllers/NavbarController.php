@@ -14,6 +14,7 @@ class NavbarController extends Controller
      */
     public function index()
     {
+        $navbar = Navbar::all();
         return view('backoffice.navbar.tableauNav', compact('navbar'));
     }
 
@@ -45,7 +46,7 @@ class NavbarController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show(Navbar $navbar)
-    {
+    {   $navbar = Navbar::all();
         return view('backoffice.navbar.showNav', compact('navbar'));
     }
 
